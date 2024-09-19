@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {HiArrowRight} from 'react-icons/hi2';
+import roundedtext from "../public/rounded-text.png";
 
 const ProjectsBtn = () => {
   return (
@@ -11,7 +12,7 @@ const ProjectsBtn = () => {
         bg-circleStar bg-cover bg-center bg-no-repeat group'
       >
         <Image
-          src={'/rounded-text.png'}
+          src={roundedtext}
           width={141}
           height={148}
           alt=''
