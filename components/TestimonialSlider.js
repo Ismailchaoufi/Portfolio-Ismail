@@ -78,11 +78,11 @@ const TestimonialSlider = () => {
                 xl:before:h-[200px] relative xl:pl-20 '>
                   {/* quote icon*/}
                   <div className='mb-4'>
-                    <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto
+                    <FaQuoteLeft className='text-3xl xl:text-6xl text-white/20 mx-auto
                     md:mx-0' />
                   </div>
                   {/*message */}
-                  <div className='xl:text-sm text-center md:text-left'> {person.message} </div>
+                  <div className='text-sm text-center md:text-left'> {person.message} </div>
                 </div>
               </div>
           </SwiperSlide>
