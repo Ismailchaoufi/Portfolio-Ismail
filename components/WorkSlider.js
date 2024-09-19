@@ -1,7 +1,3 @@
-import thumb1 from "../public/thumb1.jpg";
-import thumb2 from "../public/thumb2.jpg";
-import thumb3 from "../public/thumb3.jpg";
-import thumb4 from "../public/thumb4.jpg";
 // data
 const workSlides = {
   slides: [
@@ -9,22 +5,22 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: {thumb1},
+          path: './thumb1.jpg',
           link:'https://github.com/Ismailchaoufi/APPLICATION_GESTION_RH.git',
         },
         {
           title: 'title',
-          path: {thumb2},
+          path: './thumb2.jpg',
           link:'https://github.com/Ismailchaoufi/-Behavioral-analysis-of-drivers-using-Deep-Learning.git',
         },
         {
           title: 'title',
-          path: {thumb3},
+          path: './thumb3.jpg',
           link:'https://github.com/Ismailchaoufi/Application_JIBI.git',
         },
         {
           title: 'title',
-          path: {thumb4},
+          path: './thumb4.jpg',
           link:'https://github.com/Ismailchaoufi/APPLICATION_GESTION_RH.git',
         },
       ],
@@ -33,22 +29,22 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: {thumb4},
+          path: './thumb4.jpg',
           link:'',
         },
         {
           title: 'title',
-          path: {thumb1},
+          path: './thumb1.jpg',
           link:'',
         },
         {
           title: 'title',
-          path: {thumb2},
+          path: './thumb2.jpg',
           link:'',
         },
         {
           title: 'title',
-          path: {thumb3},
+          path: './thumb3.jpg',
           link:'',
         },
       ],
@@ -78,7 +74,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[ Pagination]}
-      className="'h-[280px] sm:h-[480px]"
+      className="'h-[280px] sm:h-[460px]"
     >
       {workSlides.slides.map((slide, index) => {
         return (
@@ -86,33 +82,43 @@ const WorkSlider = () => {
               <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
                 {slide.images.map((image, index) => {
                   return (
-                    <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' 
-                    key={index}
-                    >
-                      <Link href={image.link}>
-                        <div className='flex items-center justify-center relative overflow-hidden group'>
-                          {/* image */}
-                          <Image src={image.path} width={500} height={300} alt='' />
-                          {/* overlay gradient */}
-                          <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
-                          {/* title */}
-                          <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
-                            <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
-                              {/* title part 1 */}
-                              <div className='delay-100'>VIEW</div>
-                              {/* title part 2 */}
-                              <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>
-                                PROJECT
+                    <Link href={image.link}>
+                        <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
+                          <div className='flex items-center justify-center relative overflow-hidden group'
+                          key={index}>
+                            {/** image */}
+                            
+                              <Image 
+                                src={image.path}
+                                width={500}
+                                height={300}
+                                alt=''
+                              />
+                            
+                            {/* overlly gradiant*/}
+                            <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#a3065c] to-[#4a22bd]
+                            opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
+                              {/** title */}
+                              <div 
+                              className='absolute bottom-0  translate-y-full group-hover:-translate-y-10 
+                              group-hover:xl:-translate-y-20 transition-all duration-300'>
+                                <div className='flex items-center gap-x-2 text-[13px] tracking-[0.2em]'>
+                                  {/** title part 1 */}
+                                  <div className='delay-100'>LIVE</div>
+                                  {/** title part 2 */}
+                                  <div 
+                                  className='translate-y-[500%] group-hover:translate-y-0 
+                                  transition-all duration-300 delay-150'>PROJECT</div>
+                                  {/** title part 1 */}
+                                  <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all
+                                  duration-300 delay-200'>
+                                    <BsArrowRight/>
+                                  </div>
+                                </div>
                               </div>
-                              {/* icon */}
-                              <div className='text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
-                                <BsArrowRight />
-                              </div>
-                            </div>
                           </div>
                         </div>
-                      </Link>
-                    </div>
+                     </Link>
                   );
                 })}
               </div>
