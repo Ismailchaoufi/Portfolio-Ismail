@@ -30,7 +30,7 @@ const Work = () => {
                           exit='hidden'
                           className='mb-4 max-w-[408px] mx-auto lg:mx-0' 
                         >
-                            Browse through a collection of my projects, each demonstrating my expertise in backend development and system design. While these projects are not live, you can explore the code and documentation on GitHub by clicking the links provided. Each project highlights different aspects of my work, including the technologies used, challenges faced, and solutions implemented. Click on any project to dive deeper into the source code and see how I&apos;ve brought my ideas to life.
+                            Explore my collection of backend development and system design projects. While not live, you can view the code and documentation on GitHub. Each project showcases the technologies used, challenges overcome, and solutions implemented. Click any project to dive into the source code and see my work in action.
                         </motion.p>
                     </div>
                     {/*slider */}
