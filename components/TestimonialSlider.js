@@ -1,21 +1,24 @@
+import avt1 from "../public/t-avt-1.png.png";
+import avt2 from "../public/t-avt-2.png.png";
+import avt3 from "../public/t-avt-3.png.png";
 // testimonial data
 const testimonialData = [
   {
-    image: '/t-avt-1.png',
+    image: '{avt1},
     name: 'Anne Smith',
     position: 'Customer',
     message:
       'Working with CHAOUFI Ismail was an absolute pleasure. The project was completed ahead of schedule, and the final product exceeded our expectations. Their attention to detail and ability to understand our needs made the process smooth and efficient.',
   },
   {
-    image: '/t-avt-2.png',
+    image: {avt2},
     name: 'Jane Doe',
     position: 'Customer',
     message:
       "Working with CHAOUFI Ismail has been an absolute pleasure. Their attention to detail, exceptional communication skills, and ability to understand our unique needs have made a significant impact on our project's success. "
   },
   {
-    image: '/t-avt-3.png',
+    image: {avt3},
     name: 'Jhon Doe',
     position: 'Customer',
     message:
