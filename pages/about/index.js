@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 // icons
 import {
-  FaHtml5,
+  FaHtml5 ,
   FaCss3,
   FaJs,
   FaReact,
@@ -29,20 +29,20 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaLaravel />,
-          <FaJava />,
-          <FaPhp />,
-          <FaAngular />,
+          <FaHtml5 key="html5"/>,
+          <FaCss3 key="css3"/>,
+          <FaJs key="js"/>,
+          <FaReact key="react"/>,
+          <SiNextdotjs key="nextdotjs"/>,
+          <FaLaravel key="laravel"/>,
+          <FaJava key="java"/>,
+          <FaPhp key="php"/>,
+          <FaAngular key="angular"/>,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />],
+        icons: [<FaFigma key="figma"/>, <SiAdobexd key="adobexd"/>],
       },
     ],
   },
@@ -171,7 +171,7 @@ const About = () => {
             {aboutData.map((item,itemIndex) => {
               return(
                 <div
-                key={itemIndex}
+                key={`about-${itemIndex}`}
                 className={`${index===itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
                 } cursor-pointer capitzlize xl:text-lg relative after:w-8
                 after:h-[2px] after:bg-white after:absolute after:-bottom-1
@@ -188,7 +188,7 @@ const About = () => {
             {aboutData[index].info.map((item,itemIndex)=> {
               return (
                 <div 
-                  key={itemIndex}
+                  key={`info-${itemIndex}`}
                   className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2
                   items-center text-white/60'
                 >
@@ -198,8 +198,8 @@ const About = () => {
                     <div>{item.stage}</div>
                     <div className='flex gap-x-4'>
                       {/*icons */}
-                      {item.icons?.map((icon, itemIndex)=> {
-                        return <div className='text-2xl text-white'>{icon}</div>
+                      {item.icons?.map((icon, iconIndex)=> {
+                        return <div key={`icon-${iconIndex}`} className='text-2xl text-white'>{icon}</div>
                       })}
                     </div>
                 </div>
