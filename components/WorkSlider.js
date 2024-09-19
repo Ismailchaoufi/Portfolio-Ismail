@@ -9,7 +9,7 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '{thumb1},
+          path: {thumb1},
           link:'https://github.com/Ismailchaoufi/APPLICATION_GESTION_RH.git',
         },
         {
@@ -29,7 +29,7 @@ const workSlides = {
         },
       ],
     },
-/*    {
+  /*  {
       images: [
         {
           title: 'title',
