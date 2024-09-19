@@ -1,3 +1,7 @@
+import thumb1 from "../public/thumb1.jpg";
+import thumb2 from "../public/thumb2.jpg";
+import thumb3 from "../public/thumb3.jpg";
+import thumb4 from "../public/thumb4.jpg";
 // data
 const workSlides = {
   slides: [
@@ -5,27 +9,27 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '{thumb1},
           link:'https://github.com/Ismailchaoufi/APPLICATION_GESTION_RH.git',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: {thumb2},
           link:'https://github.com/Ismailchaoufi/-Behavioral-analysis-of-drivers-using-Deep-Learning.git',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: {thumb3},
           link:'https://github.com/Ismailchaoufi/Application_JIBI.git',
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: {thumb4},
           link:'https://github.com/Ismailchaoufi/APPLICATION_GESTION_RH.git',
         },
       ],
     },
-    {
+/*    {
       images: [
         {
           title: 'title',
@@ -48,7 +52,7 @@ const workSlides = {
           link:'',
         },
       ],
-    },
+    },*/
   ],
 };
 
