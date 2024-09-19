@@ -4,7 +4,7 @@ import avt3 from "../public/t-avt-3.png";
 // testimonial data
 const testimonialData = [
   {
-    image: '{avt1},
+    image: {avt1},
     name: 'Anne Smith',
     position: 'Customer',
     message:
