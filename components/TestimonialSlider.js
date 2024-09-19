@@ -82,7 +82,7 @@ const TestimonialSlider = () => {
                     md:mx-0' />
                   </div>
                   {/*message */}
-                  <div className='xl:text-base text-center md:text-left'> {person.message} </div>
+                  <div className='text-center md:text-left'> {person.message} </div>
                 </div>
               </div>
           </SwiperSlide>
