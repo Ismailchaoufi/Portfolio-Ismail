@@ -1,6 +1,6 @@
-import avt1 from "../public/t-avt-1.png";
-import avt2 from "../public/t-avt-2.png";
-import avt3 from "../public/t-avt-3.png";
+import avt1 from '../public/t-avt-1.png';
+import avt2 from '../public/t-avt-2.png';
+import avt3 from '../public/t-avt-3.png';
 // testimonial data
 const testimonialData = [
   {
